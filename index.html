@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Enhanced E-Commerce Store</h1>
+        <input type="text" id="search" placeholder="Search products...">
+        <div class="cart">
+            <img src="https://img.icons8.com/ios-filled/50/000000/shopping-cart.png" alt="Cart" width="24">
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+    
+    <nav id="category-nav">
+        <button onclick="filterProducts('all')">All</button>
+        <button onclick="filterProducts('electronics')">Electronics</button>
+        <button onclick="filterProducts('jewelery')">Jewelery</button>
+        <button onclick="filterProducts('men\'s clothing')">Men's Clothing</button>
+        <button onclick="filterProducts('women\'s clothing')">Women's Clothing</button>
+    </nav>
+    
+    <main>
+        <div id="product-list" class="product-list"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
